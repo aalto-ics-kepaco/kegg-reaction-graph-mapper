@@ -1,7 +1,7 @@
 kegg-reaction-graph-mapper
 =========================
 
-A tool to extract reaction graph .mol files from standard [KEGG dataset](http://www.genome.jp/kegg/) .mol files. This implementation was originally done by Markus Heinonen ("Efficient Path Kernels for Reaction Function Prediction" - M Heinonen, N Välimäki, V Mäkinen, J Rousu - 2012).
+A tool to extract reaction graph .mol files from standard [KEGG dataset](http://www.genome.jp/kegg/) .mol files. This implementation was originally done by Markus Heinonen ("Computing Atom Mappings for Biochemical Reactions without Subgraph Isomorphismn" - Markus Heinonen, Sampsa Lappalainen, Taneli Mielikäinen, and Juho Rousu, 2011).
 
 Contents
 --------
@@ -35,8 +35,10 @@ Here are the same steps if run manually:
 2. feature-generator: Create atom features from KEGG mol files using `python generator2011.py KEGGPATH/mol/* -k all --output-dir RESULTS/mol-features/`. The optional parameter k specifies the context size, default is all. There are other optional parameters for this script.
 3. atommapper: Create reactiongraph mol files with atommapper: `java Mapper2000 -rgraphs -moldir KEGGPATH/mol/ -featdir RESULTS/mol-features/ -reacfile RESULTS/kegg-reactions.txt -output RESULTS/reaction-graphs`. There are further optional parameters for this script.
 
-License: GNU General Public License
------------------------------------
+License and Copyright
+---------------------
+
+Copyright (c) 2011 Markus Heinonen, Sampsa Lappalainen, Taneli Mielikäinen, and Juho Rousu.
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
