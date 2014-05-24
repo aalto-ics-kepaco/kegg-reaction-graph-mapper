@@ -1,7 +1,7 @@
 kegg-reaction-graph-mapper
 =========================
 
-A tool to extract reaction graph .mol files from standard [KEGG dataset](http://www.genome.jp/kegg/) .mol files. This implementation was originally done by Markus Heinonen ("Computing Atom Mappings for Biochemical Reactions without Subgraph Isomorphismn" - Markus Heinonen, Sampsa Lappalainen, Taneli Mielikäinen, and Juho Rousu, 2011).
+A tool to extract reaction graph .mol files from standard [KEGG dataset](http://www.genome.jp/kegg/) .mol files. This implementation was originally done by Markus Heinonen. Please refer to "Heinonen, M. and Lappalainen, S. and Mielikäinen, T. and Rousu, J. Computing Atom Mappings for Biochemical Reactions without Subgraph Isomoprhism. J. Comp. Biol. 2011, 18:43-58)".
 
 Contents
 --------
